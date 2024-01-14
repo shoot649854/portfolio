@@ -1,46 +1,100 @@
-# Getting Started with Create React App
+## For developers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScirpt](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white) ![material-ui](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white) ![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
-## Available Scripts
+### Environments
 
-In the project directory, you can run:
+- [node](https://nodejs.org/ja/download): 18:17.1 (LTS)
+- [npm](https://nodejs.org/ja/download): 9.6.7
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Installing packages
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+### Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Start deployment server
 
-### `npm run build`
+To start running server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+### Basic Branch Operation Rules
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Work is branched from each latest branch
+- Delete working branches after merging
+- Review as much as possible (have someone do it for you)
+- Build, deploy, etc. are discussed separately.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Branch Naming Rules
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Branch Name | Description | Supplemental |
+| ---------------------------- | ---------------- | ---- |
+| main | latest release | dev/main | latest for development
+| dev/main | latest for development | hotfix/{module name}/{subject}
+| hotfix/{module name}/{subject}
+| hotfix/{module name}/{subject matter} | sandbox/{anything} | test code, etc. |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Commit message
 
-## Learn More
+Please refer to the following template for the commit message.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+````plaintext
+🐞 Bugs and Performance
+#🐛 :bug: bug fixes.
+#🚑 :ambulance: fix a critical bug
+#🚀 :rocket: performance improvements
+#💻 Code quality and style
+#👍 :+1: feature improvements
+#♻️ :recycle: refactoring
+#👕 :shirt: Lint error fixes and code style fixes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🎨 UI/UX and design
+#✨ :sparkles: add new features
+#🎨 :art: design changes only
+
+🛠️ Development Tools and Settings.
+#🚧 :construction: WIP (Work in Progress)
+#⚙ :gear: config change
+#📦 :package: add new dependency
+#🆙 :up: update dependency packages, etc.
+
+documentation and comments.
+#📝 :memo: fix wording
+#📚 :books: documentation
+#💡 :bulb: add new ideas and comments
+
+🛡️ security
+#👮 :op: security-related improvements
+
+🧪 testing and CI.
+#💚 :green_heart: fix/improve testing and CI
+
+🗂️ file and folder manipulation.
+#📂 :file_folder: Folder manipulation
+#🚚 :truck: file movement
+
+#📊 :log: logging and tracking
+#💢 :anger: conflicts
+#🔊 :loud_sound: add log
+#🔇 :mute: log deleted.
+#📈 :chart_with_upwards_trend: add analytics or tracking code
+
+💡 Other.
+#🧐 :monocle_face: code reading and questions.
+#🍻 :beers: code that was fun to write.
+#🙈 :see_no_evil: .gitignore addition.
+#🛠️ :hammer_and_wrench: bug fixes and basic problem solving
+```
