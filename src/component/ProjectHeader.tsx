@@ -13,7 +13,6 @@ const ProjectHeader = ({ projectTitle, editedDate, imageSrcPath, children }: IPr
       const profileImage = imageSrcPath ? require(imageSrcPath) : null;
       setCustomProfile(profileImage);
     } catch (error) {
-      console.error(`Error loading image from path: ${imageSrcPath}`);
       setImageLoadError(true);
       setTimeout(() => {
         setImageLoadError(false);

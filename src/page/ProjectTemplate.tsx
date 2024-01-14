@@ -8,7 +8,7 @@ const ProjectTemplate = () => {
 
   return (
     <Box>
-      <ProjectHeader projectTitle={projectTitle} editedDate={editedDate} imageSrcPath='../data/image/opened-laptop.jpg' />
+      <ProjectHeader projectTitle={projectTitle} editedDate={editedDate} />
       
       <Typography variant="subtitle1" fontSize="13px" margin='20px' color="black" fontFamily="sans-serif">
         Description Description Description Description Description Description Description Description Description Description Description Description 
