@@ -14,7 +14,7 @@ const AppLayout = () => {
         marginLeft={25}
         marginRight={25}
         sx={{
-          backgroundColor: "#fff", // FIXME: f5f6f6
+          backgroundColor: "#f5f6f6", // FIXME: f5f6f6
           minHeight: "100vh",
           margin: "0 auto",
           "@media (max-width: 800px)": {
@@ -23,7 +23,11 @@ const AppLayout = () => {
         }}
       >
         <Header />
-        <Box sx={{ 
+        <Box 
+          padding={{ top: 0, right: 20, bottom: 0, left: 20 }} 
+          paddingLeft={25}
+          paddingRight={25}
+          sx={{ 
           borderRadius: "1%",
           // margin: "20px", 
           flexGrow: 1, 

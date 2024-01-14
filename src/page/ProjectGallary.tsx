@@ -11,10 +11,10 @@ import projectQiitaFD5 from '../data/project1/projectQiitaFD1.jpeg';
 import prohjectNagoya1 from '../data/project2/projectNagoya1.jpeg';
 import projectSymposium1 from '../data/project3/projectSymposium1.jpeg';
 
-const Project = () => {
+const ProjectGallary = () => {
 
   return (
-    <Box margin={10}>
+    <Box>
       <Typography fontFamily="sans-serif" variant="h1" fontSize="42px" color="black">
           Project Gallary
       </Typography>
@@ -90,4 +90,4 @@ const Project = () => {
   );
 }
 
-export default Project;
+export default ProjectGallary;

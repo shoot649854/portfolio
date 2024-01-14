@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import AppLayout from "./Layout/AppLayout";
 import Blog from "./page/Blog";
-import Project from "./page/Project";
+import ProjectGallary from "./page/ProjectGallary";
 import ProjectTemplate from "./page/ProjectTemplate";
 import NotFound from "./page/NotFound";
 
@@ -15,7 +15,7 @@ function App() {
           <Route index element={<Blog />} />
           <Route path="blog" element={<Blog />} />
 
-          <Route path="project" element={<Project />} />
+          <Route path="project" element={<ProjectGallary />} />
           <Route path="project/1" element={<ProjectTemplate />} />
           <Route path="/portfolio" element={<Navigate to="/" />} />
 

@@ -15,7 +15,7 @@ function Header() {
   
   return (
     <React.Fragment>
-      <Box sx={{ display: 'flex', justifyContent: 'center', backgroundColor: '#fff'}}>
+      <Box marginBottom='20px' sx={{ display: 'flex', justifyContent: 'center', backgroundColor: '#fff'}}>
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
           <IconButton>
             <SearchIcon />
