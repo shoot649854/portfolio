@@ -1,11 +1,10 @@
-import { useEffect } from "react";
 import { Box } from "@mui/material";
-import { NavigateFunction, Outlet, useNavigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 
 const AppLayout = () => {
-  const navigate: NavigateFunction = useNavigate();
+  // const navigate: NavigateFunction = useNavigate();
   
   return (
     <Box sx={{ backgroundColor: '#f5f6f6' }}>
@@ -15,7 +14,7 @@ const AppLayout = () => {
         marginLeft={25}
         marginRight={25}
         sx={{
-          backgroundColor: "#f5f6f6",
+          backgroundColor: "#fff", // FIXME: f5f6f6
           minHeight: "100vh",
           margin: "0 auto",
           "@media (max-width: 800px)": {

@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Link, NavigateFunction, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -8,16 +7,15 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
-import laptop_photo from '../image/opened-laptop.jpg';
-import projectQiitaFD5 from '../../data/project1/projectQiitaFD1.jpeg';
-import prohjectNagoya1 from '../../data/project2/projectNagoya1.jpeg';
-import projectSymposium1 from '../../data/project3/projectSymposium1.jpeg';
+import projectQiitaFD5 from '../data/project1/projectQiitaFD1.jpeg';
+import prohjectNagoya1 from '../data/project2/projectNagoya1.jpeg';
+import projectSymposium1 from '../data/project3/projectSymposium1.jpeg';
 
 const Project = () => {
 
   return (
-    <Box>
-      <Typography fontFamily="sans-serif" variant="h1" fontSize="42px" color="black" margin={5}>
+    <Box margin={10}>
+      <Typography fontFamily="sans-serif" variant="h1" fontSize="42px" color="black">
           Project Gallary
       </Typography>
       <Box display="flex" sx={{ gap: 2 }}>

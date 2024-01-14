@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, NavigateFunction, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -8,13 +8,10 @@ import Button from '@mui/material/Button';
 import Box from '@mui/system/Box';
 import Avatar from '@mui/material/Avatar';
 
-import Project from './page/Project';
-import Blog from './Blog';
-
 import profile from '../data/profile/profile.jpeg';
 
 function Header() {
-  const navigate: NavigateFunction = useNavigate();
+  const navigate = useNavigate();
   
   return (
     <React.Fragment>

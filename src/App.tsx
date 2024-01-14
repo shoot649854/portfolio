@@ -2,10 +2,10 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import AppLayout from "./Layout/AppLayout";
-import Blog from "./component/Blog";
-import Project from "./component/page/Project";
-import ProjectTemplate from "./component/page/ProjectTemplate";
-import NotFound from "./component/page/NotFound";
+import Blog from "./page/Blog";
+import Project from "./page/Project";
+import ProjectTemplate from "./page/ProjectTemplate";
+import NotFound from "./page/NotFound";
 
 function App() {
   return (
