@@ -17,30 +17,6 @@ const Project = () => {
 
   return (
     <Box>
-      {/* <Box
-        className="hero"
-        marginBottom={10}
-        height="calc(110vh - 120px)"
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        style={{
-          backgroundImage: `url(${laptop_photo})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <Box width="50%" textAlign="center">
-          <Typography variant="h1" fontSize="42px" color="#FFF">
-            Title
-          </Typography>
-          <Typography variant="body1" fontSize="18px" marginTop="20px" fontWeight="400" color="FFF">
-            Description
-          </Typography>
-        </Box>
-      </Box> */}
-
       <Typography fontFamily="sans-serif" variant="h1" fontSize="42px" color="black" margin={5}>
           Project Gallary
       </Typography>

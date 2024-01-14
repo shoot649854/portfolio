@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AppLayout from "./Layout/AppLayout";
 import Blog from "./component/Blog";
 import Project from "./component/page/Project";
-import PersonalProject from "./component/page/PersonalProject";
+import ProjectTemplate from "./component/page/ProjectTemplate";
 import NotFound from "./component/page/NotFound";
 
 function App() {
@@ -14,11 +14,12 @@ function App() {
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Blog />} />
           <Route path="blog" element={<Blog />} />
+
           <Route path="project" element={<Project />} />
-          <Route path="project/1" element={<PersonalProject />} />
-          {/* <Route path="project/2" element={<PersonalProject />} />
-          <Route path="project/3" element={<PersonalProject />} /> */}
+          <Route path="project/1" element={<ProjectTemplate />} />
           <Route path="/portfolio" element={<Navigate to="/" />} />
+
+          {/* Not Found Page Router */}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
