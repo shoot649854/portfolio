@@ -1,4 +1,5 @@
 import { CodeBlock as SyntaxHighlighter, dracula } from 'react-code-blocks';
+import { Box } from '@mui/material';
 
 import { ICodeSegment } from '../Types';
 
@@ -8,6 +9,7 @@ const CodeSegment = (props: ICodeSegment) => {
 
   return (
     <>
+    <Box marginBottom={5}>
       <SyntaxHighlighter
         language={language}
         showLineNumbers={showLineNumbers}
@@ -16,6 +18,7 @@ const CodeSegment = (props: ICodeSegment) => {
         text={codeLines.join('\n')}
         {...rest}
       />
+    </Box>
     </>
   );
 };
