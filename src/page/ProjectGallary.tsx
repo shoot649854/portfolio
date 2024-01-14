@@ -15,9 +15,18 @@ const ProjectGallary = () => {
 
   return (
     <Box>
-      <Typography fontFamily="sans-serif" variant="h1" fontSize="42px" color="black">
+      <Typography variant="h1" fontSize="42px" fontWeight="bold" color="black" marginBottom="20px" fontFamily="sans-serif">
           Project Gallary
       </Typography>
+      <Typography variant="subtitle1" fontSize="13px" margin='20px' color="black" fontFamily="sans-serif">
+        Explore my Project Gallery showcasing innovative endeavors. 
+        In collaboration with Japanese university students, the Qiita × Fast DOCTOR Health Tech Hackathon led to the creation of an AR App with Flutter, 
+        sponsored by Toyota. The app integrated Luma API and Google Map API for 3D models and mapping features. Additionally, the Electric Sheep Hackathon 
+        focused on Mobility and Big Data, resulting in another AR App creation. Lastly, my involvement in the Symposium on Cyberwarfare in Russia and Ukraine 
+        involved in-depth research on cyber warfare, with presentations alongside technology expert Kenneth Geers and mentor Professor Alani Mayada. 
+        Dive into a world of technological exploration and problem-solving.
+      </Typography>
+
       <Box display="flex" sx={{ gap: 2 }}>
         <Link to="/project/1" style={{ textDecoration: 'none' }}>
           <Card sx={{ maxWidth: 345 }}>

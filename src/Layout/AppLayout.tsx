@@ -24,12 +24,13 @@ const AppLayout = () => {
       >
         <Header />
         <Box 
-          padding={{ top: 0, right: 20, bottom: 0, left: 20 }} 
-          paddingLeft={25}
+          padding={{ top: 3, right: 20, bottom: 10, left: 20 }} 
+          paddingTop={3}
           paddingRight={25}
+          paddingBottom={10}
+          paddingLeft={25}
           sx={{ 
           borderRadius: "1%",
-          // margin: "20px", 
           flexGrow: 1, 
           backgroundColor: "#fff" }}
         > 
