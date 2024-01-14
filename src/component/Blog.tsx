@@ -11,7 +11,6 @@ import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
 import Main from './Main';
 import Sidebar from './SideBar';
-import Footer from './Footer';
 import post1 from '../data/blog-post.1.md';
 
 const sections = [
