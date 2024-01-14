@@ -15,7 +15,7 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="project" element={<Project />} />
           <Route path="project/1" element={<PersonalProject />} />
-          <Route path="/portfolio" element={<Navigate to="blog" />} />
+          {/* <Route path="/portfolio" element={<Navigate to="blog" />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
