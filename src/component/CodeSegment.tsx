@@ -2,13 +2,8 @@ import { CodeBlock as SyntaxHighlighter, dracula } from 'react-code-blocks';
 
 import { ICodeSegment } from '../Types';
 
-const CodeSegment: React.FC<ICodeSegment> = ({
-    language,
-    showLineNumbers = false,
-    startingLineNumber = 1,
-    children,
-    ...rest
-  }) => {
+const CodeSegment = (props: ICodeSegment) => {
+  const { language, showLineNumbers, startingLineNumber, children, ...rest} = props;
     return (
       <>
         <SyntaxHighlighter

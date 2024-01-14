@@ -7,3 +7,10 @@ export interface ICodeSegment {
     startingLineNumber?: number;
     children?: ReactNode;
 }
+
+export interface IProjectHeader {
+  projectTitle: string;
+  editedDate: string;
+  imageSrcPath?: string;
+  children?: ReactNode;
+}
