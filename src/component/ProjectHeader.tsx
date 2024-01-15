@@ -4,7 +4,7 @@ import profile from '../data/profile/profile.jpeg';
 import { IProjectHeader } from "../Types";
 
 
-const ProjectHeader = ({ projectTitle, editedDate, imageSrcPath, children }: IProjectHeader) => {
+const ProjectHeader = ({ projectTitle, editedDate, imageSrcPath, tags, children }: IProjectHeader) => {
   const [imageLoadError, setImageLoadError] = useState(false);
   const [customProfile, setCustomProfile] = useState(null);
 
@@ -41,6 +41,15 @@ const ProjectHeader = ({ projectTitle, editedDate, imageSrcPath, children }: IPr
       <Typography variant="subtitle1">
         Edited Date: {editedDate}
       </Typography>
+      {tags && (
+        <Box sx={{ display: 'flex', gap: 1 }}>
+          {tags.map((tag: any, index: number) => (
+            <Typography key={index} variant="subtitle2" color="primary">
+              {tag}
+            </Typography>
+          ))}
+        </Box>
+      )}
       {children}
     </>
   );

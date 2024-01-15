@@ -30,7 +30,7 @@ const ProjectQiitaFD1 = () => {
 
   return (
     <Box>
-      <ProjectHeader projectTitle={projectTitle} editedDate={editedDate} />
+      <ProjectHeader projectTitle={projectTitle} editedDate={editedDate} tags={['Coding', 'Medical']}/>
 
       <Box>
         <Typography
