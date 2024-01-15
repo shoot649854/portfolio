@@ -10,20 +10,19 @@ import ProjectSymposium from "./page/ProjectSymposium";
 import NotFound from "./page/NotFound";
 
 function App() {
+  // const PUBLIC_URL = process.env.REACT_APP_HOMEPAGE;
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/portofolio" element={<AppLayout />}>
+        <Route path="/" element={<AppLayout />}>
           <Route index element={<Blog />} />
-          <Route path="blog" element={<Blog />} />
-
-          <Route path="project" element={<ProjectGallary />} />
-          <Route path="project/1" element={<ProjectQiitaFD1 />} />
-          <Route path="project/2" element={<ProjectNagoya />} />
-          <Route path="project/3" element={<ProjectSymposium />} />
-
+          <Route path="portfolio/blog" element={<Blog />} />
+          <Route path="portfolio/project" element={<ProjectGallary />} />
+          <Route path="portfolio/project/1" element={<ProjectQiitaFD1 />} />
+          <Route path="portfolio/project/2" element={<ProjectNagoya />} />
+          <Route path="portfolio/project/3" element={<ProjectSymposium />} />
           {/* Not Found Page Router */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="portfolio/*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

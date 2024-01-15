@@ -31,7 +31,7 @@ const ProjectGallary = () => {
       </Typography>
 
       <Box display="flex" sx={{ gap: 2, flexDirection: isSmallScreen ? 'column' : 'row' }}>
-        <Link to="/project/1" style={{ textDecoration: 'none' }}>
+        <Link to="/portfolio/project/1" style={{ textDecoration: 'none' }}>
           <Card sx={{ maxWidth: 345, width: isSmallScreen ? '100%' : 'auto'  }}>
             <CardActionArea>
               <CardMedia
@@ -53,7 +53,7 @@ const ProjectGallary = () => {
           </Card>
         </Link>
 
-        <Link to="/project/2"style={{ textDecoration: 'none' }}>
+        <Link to="/portfolio/project/2"style={{ textDecoration: 'none' }}>
           <Card sx={{ maxWidth: 345, width: isSmallScreen ? '100%' : 'auto'  }}>
             <CardActionArea>
               <CardMedia
@@ -75,7 +75,7 @@ const ProjectGallary = () => {
           </Card>
         </Link>
 
-        <Link to="/project/3"style={{ textDecoration: 'none' }}>
+        <Link to="/portfolio/project/3"style={{ textDecoration: 'none' }}>
           <Card sx={{ maxWidth: 345, width: isSmallScreen ? '100%' : 'auto'  }}>
             <CardActionArea>
               <CardMedia

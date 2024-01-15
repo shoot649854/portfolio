@@ -22,8 +22,8 @@ function Header() {
           </IconButton>
             
           <Toolbar component="nav" variant="dense">
-            <Button variant="text" onClick={() => navigate('/blog')}>blog</Button>
-            <Button variant="text" onClick={() => navigate('/project')}>Project</Button>
+            <Button variant="text" onClick={() => navigate('/portfolio/blog')}>blog</Button>
+            <Button variant="text" onClick={() => navigate('/portfolio/project')}>Project</Button>
           </Toolbar>
         </Box>
         <Box marginTop={'0.5%'}>
