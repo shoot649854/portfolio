@@ -1,6 +1,8 @@
 import { Typography, Box } from '@mui/material';
 import CodeSegment from '../component/CodeSegment';
+import VideoSegment from '../component/VideoSegment';
 import ProjectHeader from '../component/ProjectHeader';
+
 import projectNagoya2 from '../data/project2/projectNagoya2.png';
 import projectNagoyaDemo from '../data/project2/projectNagoyaDemo.mp4';
 
@@ -163,12 +165,7 @@ const ProjectNagoya = () => {
           そこで、私たちエンジニアはデモをモバイルアプリとして開発することを決め、日本の5人のエンジニアで作り始めました。難しかった点としてはGoogle map api とLuma API をFlutter で使用することでした
 
         </Typography>
-        <Box marginBottom={10}>
-          <video width="100%" controls>
-            <source src={projectNagoyaDemo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </Box>
+        <VideoSegment source={projectNagoyaDemo} type='video/mp4' />
       </Box>
 
       <Box>
