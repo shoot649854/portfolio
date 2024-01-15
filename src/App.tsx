@@ -6,6 +6,7 @@ import Blog from "./page/Blog";
 import ProjectGallary from "./page/ProjectGallary";
 import ProjectQiitaFD1 from "./page/ProjectQiitaFD1";
 import ProjectNagoya from "./page/ProjectNagoya";
+import ProjectSymposium from "./page/ProjectSymposium";
 import NotFound from "./page/NotFound";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="project" element={<ProjectGallary />} />
           <Route path="project/1" element={<ProjectQiitaFD1 />} />
           <Route path="/project/2" element={<ProjectNagoya />} />
+          <Route path="/project/3" element={<ProjectSymposium />} />
           <Route path="/portfolio" element={<Navigate to="/" />} />
 
 

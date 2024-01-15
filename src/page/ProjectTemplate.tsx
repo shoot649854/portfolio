@@ -7,22 +7,9 @@ const ProjectTemplate = () => {
   const editedDate = "1/1/2023";
   const projectTitle = "Title";
   const pythonCode =
-  `
-  import random
-  import statistics
-  
-  # Generate a random list of 10 integers between 1 and 100
-  random_numbers = [random.randint(1, 100) for _ in range(10)]
-  
-  # Print the random list
-  print("Random Numbers:", random_numbers)
-  
-  # Calculate and print statistics
-  mean_value = statistics.mean(random_numbers)
-  median_value = statistics.median(random_numbers)
-  max_value = max(random_numbers)
-  min_value = min(random_numbers)
-  `;
+  `print('Hello World!')
+print('Get a mug of coffee!')
+`;
 
   return (
     //Ideathon / Brainstorming, Solution, Struggle, Demo, Conclusion
