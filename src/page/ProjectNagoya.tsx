@@ -3,28 +3,28 @@ import CodeSegment from '../component/CodeSegment';
 import ProjectHeader from '../component/ProjectHeader';
 import NotFound from './NotFound';
 
-const ProjectTemplate = () => {
+const ProjectNagoya = () => {
   const editedDate = "1/1/2023";
   const projectTitle = "Title";
   const pythonCode = `import random
-  import statistics
+import statistics
 
-  # Generate a random list of 10 integers between 1 and 100
-  random_numbers = [random.randint(1, 100) for _ in range(10)]
-  
-  # Print the random list
-  print("Random Numbers:", random_numbers)
-  
-  # Calculate and print statistics
-  mean_value = statistics.mean(random_numbers)
-  median_value = statistics.median(random_numbers)
-  max_value = max(random_numbers)
-  min_value = min(random_numbers)
-  `;
+# Generate a random list of 10 integers between 1 and 100
+random_numbers = [random.randint(1, 100) for _ in range(10)]
+
+# Print the random list
+print("Random Numbers:", random_numbers)
+
+# Calculate and print statistics
+mean_value = statistics.mean(random_numbers)
+median_value = statistics.median(random_numbers)
+max_value = max(random_numbers)
+min_value = min(random_numbers)
+`;
 
   return (
     <Box>
-      <ProjectHeader projectTitle={projectTitle} editedDate={editedDate} tags={['Tag1', 'Tag2']}/>
+      <ProjectHeader projectTitle={projectTitle} editedDate={editedDate} tags={['Coding', 'Medical']}/>
 
       <Box>
         <Typography
@@ -89,4 +89,4 @@ const ProjectTemplate = () => {
   );
 }
 
-export default ProjectTemplate;
+export default ProjectNagoya;
