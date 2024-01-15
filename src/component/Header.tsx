@@ -26,7 +26,9 @@ function Header() {
             <Button variant="text" onClick={() => navigate('/project')}>Project</Button>
           </Toolbar>
         </Box>
-        <Avatar alt="Profile Photo" src={profile} />
+        <Box marginTop={'0.5%'}>
+          <Avatar alt="Profile Photo" src={profile} sx={{ width: 36, height: 36 }}/>
+        </Box>
       </Box>
 
     </React.Fragment>

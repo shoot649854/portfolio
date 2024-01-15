@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AppLayout from "./Layout/AppLayout";
 import Blog from "./page/Blog";
 import ProjectGallary from "./page/ProjectGallary";
-import ProjectTemplate from "./page/ProjectTemplate";
+import ProjectQiitaFD1 from "./page/ProjectQiitaFD1";
 import NotFound from "./page/NotFound";
 
 function App() {
@@ -16,11 +16,12 @@ function App() {
           <Route path="blog" element={<Blog />} />
 
           <Route path="project" element={<ProjectGallary />} />
-          <Route path="project/1" element={<ProjectTemplate />} />
+          <Route path="project/1" element={<ProjectQiitaFD1 />} />
           <Route path="/portfolio" element={<Navigate to="/" />} />
 
           {/* Not Found Page Router */}
           <Route path="*" element={<NotFound />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>
