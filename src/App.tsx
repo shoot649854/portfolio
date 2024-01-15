@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import AppLayout from "./Layout/AppLayout";
 import Blog from "./page/Homepage";
@@ -13,20 +13,17 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AppLayout />}>
+        <Route path="/portofolio" element={<AppLayout />}>
           <Route index element={<Blog />} />
           <Route path="blog" element={<Blog />} />
 
           <Route path="project" element={<ProjectGallary />} />
           <Route path="project/1" element={<ProjectQiitaFD1 />} />
-          <Route path="/project/2" element={<ProjectNagoya />} />
-          <Route path="/project/3" element={<ProjectSymposium />} />
-          <Route path="/portfolio" element={<Navigate to="/" />} />
-
+          <Route path="project/2" element={<ProjectNagoya />} />
+          <Route path="project/3" element={<ProjectSymposium />} />
 
           {/* Not Found Page Router */}
           <Route path="*" element={<NotFound />} />
-          
         </Route>
       </Routes>
     </BrowserRouter>
