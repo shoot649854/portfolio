@@ -1,14 +1,16 @@
 import { Typography, Box } from '@mui/material';
 import CodeSegment from '../component/CodeSegment';
 import ProjectHeader from '../component/ProjectHeader';
-import NotFound from './NotFound';
+import NotFound from '../data/NotFound/NotFound1.png';
 
 const ProjectTemplate = () => {
   const editedDate = "1/1/2023";
   const projectTitle = "Title";
-  const pythonCode = `import random
+  const pythonCode =
+  `
+  import random
   import statistics
-
+  
   # Generate a random list of 10 integers between 1 and 100
   random_numbers = [random.randint(1, 100) for _ in range(10)]
   

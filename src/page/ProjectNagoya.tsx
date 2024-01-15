@@ -1,30 +1,32 @@
 import { Typography, Box } from '@mui/material';
 import CodeSegment from '../component/CodeSegment';
 import ProjectHeader from '../component/ProjectHeader';
-import NotFound from './NotFound';
+import NotFound from '../data/NotFound/NotFound1.png';
 
 const ProjectNagoya = () => {
-  const editedDate = "1/1/2023";
-  const projectTitle = "Title";
-  const pythonCode = `import random
-import statistics
-
-# Generate a random list of 10 integers between 1 and 100
-random_numbers = [random.randint(1, 100) for _ in range(10)]
-
-# Print the random list
-print("Random Numbers:", random_numbers)
-
-# Calculate and print statistics
-mean_value = statistics.mean(random_numbers)
-median_value = statistics.median(random_numbers)
-max_value = max(random_numbers)
-min_value = min(random_numbers)
-`;
+  const editedDate = "814/1/2023";
+  const projectTitle = "Electric Sheep Hackathon (Mobility and Big Data)";
+  const pythonCode =
+  `
+  import random
+  import statistics
+  
+  # Generate a random list of 10 integers between 1 and 100
+  random_numbers = [random.randint(1, 100) for _ in range(10)]
+  
+  # Print the random list
+  print("Random Numbers:", random_numbers)
+  
+  # Calculate and print statistics
+  mean_value = statistics.mean(random_numbers)
+  median_value = statistics.median(random_numbers)
+  max_value = max(random_numbers)
+  min_value = min(random_numbers)
+  `;
 
   return (
     <Box>
-      <ProjectHeader projectTitle={projectTitle} editedDate={editedDate} tags={['Coding', 'Medical']}/>
+      <ProjectHeader projectTitle={projectTitle} editedDate={editedDate} tags={['Mobile Application', 'Google Map API']}/>
 
       <Box>
         <Typography
