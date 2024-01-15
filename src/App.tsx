@@ -2,10 +2,10 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import AppLayout from "./Layout/AppLayout";
-import Blog from "./component/Blog";
-import Project from "./component/page/Project";
-import PersonalProject from "./component/page/PersonalProject";
-import NotFound from "./component/page/NotFound";
+import Blog from "./page/Blog";
+import ProjectGallary from "./page/ProjectGallary";
+import ProjectQiitaFD1 from "./page/ProjectQiitaFD1";
+import NotFound from "./page/NotFound";
 
 function App() {
   return (
@@ -14,12 +14,14 @@ function App() {
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Blog />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="project" element={<Project />} />
-          <Route path="project/1" element={<PersonalProject />} />
-          {/* <Route path="project/2" element={<PersonalProject />} />
-          <Route path="project/3" element={<PersonalProject />} /> */}
+
+          <Route path="project" element={<ProjectGallary />} />
+          <Route path="project/1" element={<ProjectQiitaFD1 />} />
           <Route path="/portfolio" element={<Navigate to="/" />} />
+
+          {/* Not Found Page Router */}
           <Route path="*" element={<NotFound />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>

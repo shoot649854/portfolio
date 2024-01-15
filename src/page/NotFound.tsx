@@ -1,10 +1,6 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 
-import NotFound1 from '../../data/NotFound/NotFound1.png';
+import NotFound1 from '../data/NotFound/NotFound1.png';
 
 const NotFound = () => {
   

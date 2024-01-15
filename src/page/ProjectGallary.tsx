@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Link, NavigateFunction, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -8,41 +7,28 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
-import laptop_photo from '../image/opened-laptop.jpg';
-import projectQiitaFD5 from '../../data/project1/projectQiitaFD1.jpeg';
-import prohjectNagoya1 from '../../data/project2/projectNagoya1.jpeg';
-import projectSymposium1 from '../../data/project3/projectSymposium1.jpeg';
+import projectQiitaFD5 from '../data/project1/projectQiitaFD1.jpeg';
+import prohjectNagoya1 from '../data/project2/projectNagoya1.jpeg';
+import projectSymposium1 from '../data/project3/projectSymposium1.jpeg';
 
-const Project = () => {
+const ProjectGallary = () => {
 
   return (
     <Box>
-      {/* <Box
-        className="hero"
-        marginBottom={10}
-        height="calc(110vh - 120px)"
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        style={{
-          backgroundImage: `url(${laptop_photo})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <Box width="50%" textAlign="center">
-          <Typography variant="h1" fontSize="42px" color="#FFF">
-            Title
-          </Typography>
-          <Typography variant="body1" fontSize="18px" marginTop="20px" fontWeight="400" color="FFF">
-            Description
-          </Typography>
-        </Box>
-      </Box> */}
+      <Typography variant="h1" fontSize="42px" fontWeight="bold" color="black" marginBottom="20px" fontFamily="sans-serif">
+          Project Gallary
+      </Typography>
+      <Typography variant="subtitle1" fontSize="13px" margin='20px' color="black" fontFamily="sans-serif">
+        Explore my Project Gallery showcasing innovative endeavors. 
+        In collaboration with Japanese university students, the Qiita × Fast DOCTOR Health Tech Hackathon led to the creation of an AR App with Flutter, 
+        sponsored by Toyota. The app integrated Luma API and Google Map API for 3D models and mapping features. Additionally, the Electric Sheep Hackathon 
+        focused on Mobility and Big Data, resulting in another AR App creation. Lastly, my involvement in the Symposium on Cyberwarfare in Russia and Ukraine 
+        involved in-depth research on cyber warfare, with presentations alongside technology expert Kenneth Geers and mentor Professor Alani Mayada. 
+        Dive into a world of technological exploration and problem-solving.
+      </Typography>
 
       <Box display="flex" sx={{ gap: 2 }}>
-        <Link to="/project/1">
+        <Link to="/project/1" style={{ textDecoration: 'none' }}>
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
@@ -55,7 +41,7 @@ const Project = () => {
                 <Typography gutterBottom variant="h5" component="div">
                   Qiita × Fast DOCTOR Health Tech Hackathon
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="subtitle2" color="text.secondary">
                   Collaborated with Japense university students to create AR App with Flutter that Toyota sponsors. 
                   Utilize Luma API and Google Map API for 3D models and map feature
                 </Typography>
@@ -64,7 +50,7 @@ const Project = () => {
           </Card>
         </Link>
 
-        <Link to="/project/2">
+        <Link to="/project/2"style={{ textDecoration: 'none' }}>
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
@@ -77,7 +63,7 @@ const Project = () => {
                 <Typography gutterBottom variant="h5" component="div">
                   Electric Sheep Hackathon (Mobility and Big Data)
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="subtitle2" color="text.secondary">
                   Collaborated with Japense university students to create AR App with Flutter that Toyota sponsors. 
                   Utilize Luma API and Google Map API for 3D models and map feature
                 </Typography>
@@ -86,7 +72,7 @@ const Project = () => {
           </Card>
         </Link>
 
-        <Link to="/project/3">
+        <Link to="/project/3"style={{ textDecoration: 'none' }}>
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
@@ -99,7 +85,7 @@ const Project = () => {
                 <Typography gutterBottom variant="h5" component="div">
                   Symposium Cyberwarfare in Russia and Ukraine
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="subtitle2" color="text.secondary">
                   Researched on cyber-warfare I presented at research project. Worked with technology expert Kenneth Geers and my mentor, professor Alani Mayada.
                 </Typography>
               </CardContent>
@@ -113,4 +99,4 @@ const Project = () => {
   );
 }
 
-export default Project;
+export default ProjectGallary;
