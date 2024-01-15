@@ -3,10 +3,10 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
-import { MainFeaturedPostProps } from '../Types';
+import { MainFeaturedPostProps } from '../../Types';
 
 const MainFeaturedPost = (props: MainFeaturedPostProps) => {
-  const { title, description, image, imageText, LinkToPage } = props;
+  const { title, description, image, imageText, LinkToPage, date } = props;
 
   return (
     <Link href={LinkToPage} style={{ textDecoration: 'none' }}>
@@ -44,6 +44,9 @@ const MainFeaturedPost = (props: MainFeaturedPostProps) => {
             >
               <Typography component="h1" variant="h3" color="inherit" gutterBottom>
                 {title}
+              </Typography>
+              <Typography variant="subtitle1" color="inherit">
+                {date}
               </Typography>
               <Typography variant="h5" color="inherit" paragraph>
                 {description}

@@ -1,7 +1,7 @@
 import { Typography, Box } from '@mui/material';
-import CodeSegment from '../component/CodeSegment';
-import VideoSegment from '../component/VideoSegment';
-import ProjectHeader from '../component/ProjectHeader';
+import CodeSegment from '../component/ProjectComponent/CodeSegment';
+import VideoSegment from '../component/ProjectComponent/VideoSegment';
+import ProjectHeader from '../component/ProjectComponent/ProjectHeader';
 
 import projectNagoya2 from '../data/project2/projectNagoya2.png';
 import projectNagoyaDemo from '../data/project2/projectNagoyaDemo.mp4';

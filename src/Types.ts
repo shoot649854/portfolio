@@ -28,6 +28,7 @@ export interface MainFeaturedPostProps {
   imageText?: string;
   linkText?: string;
   LinkToPage: string;
+  date: string;
 }
 
 export interface FeaturedPostProps {

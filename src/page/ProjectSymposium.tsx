@@ -1,5 +1,5 @@
 import { Typography, Box } from '@mui/material';
-import ProjectHeader from '../component/ProjectHeader';
+import ProjectHeader from '../component/ProjectComponent/ProjectHeader';
 import projectSymposium1 from '../data/project3/projectSymposium1.jpeg';
 
 const ProjectSymposium = () => {

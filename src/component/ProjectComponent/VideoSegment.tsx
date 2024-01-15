@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { IVideoSegment } from '../Types';
+import { IVideoSegment } from '../../Types';
 
 const VideoSegment = (props: IVideoSegment) => {
   const { source, type } = props;

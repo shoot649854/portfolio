@@ -6,10 +6,10 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import MainFeaturedPost from '../component/MainFeaturedPost';
-import FeaturedPost from '../component/FeaturedPost';
-import Main from '../component/Main';
-import Sidebar from '../component/SideBar';
+import MainFeaturedPost from '../component/PostComponent/MainFeaturedPost';
+import FeaturedPost from '../component/PostComponent/FeaturedPost';
+import Main from '../component/PostComponent/Main';
+import Sidebar from '../component/PostComponent/SideBar';
 import post1 from '../data/blog-post.1.md';
 
 import ProjectNagoya2 from '../data/project2/projectNagoya2.png'
@@ -63,7 +63,7 @@ function Homepage() {
 
       <Container maxWidth="lg">
         
-        <MainFeaturedPost title={MainFeaturedPostTitle} description={MainFeaturedPostDescription} image={ProjectNagoya2} LinkToPage={MainFeaturedPostLinkToPage}/>
+        <MainFeaturedPost title={MainFeaturedPostTitle} description={MainFeaturedPostDescription} image={ProjectNagoya2} LinkToPage={MainFeaturedPostLinkToPage} date='1/3/2023'/>
 
         <Grid container spacing={4}>
           <FeaturedPost title={FeaturedPost1Title} description={FeaturedPost1Description} date='1/3/2023' image={ProjectQiitaFD1} LinkToPage={FeaturedPost1PostLinkToPage}/>

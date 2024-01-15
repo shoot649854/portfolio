@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, Avatar, Typography, Alert } from "@mui/material";
-import profile from '../data/profile/profile.jpeg';
-import { IProjectHeader } from "../Types";
+import profile from '../../data/profile/profile.jpeg';
+import { IProjectHeader } from "../../Types";
 
 const Tags = ({ tags }: { tags: string[] }) => (
   <Box sx={{ display: 'flex', gap: 1 }}>
