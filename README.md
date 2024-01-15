@@ -69,7 +69,6 @@ Please refer to the following template for the commit message.
 #🚧 :construction: WIP (Work in Progress)
 #⚙ :gear: config change
 #📦 :package: add new dependency
-#🆙 :up: update dependency packages, etc.
 
 documentation and comments.
 #📝 :memo: fix wording
