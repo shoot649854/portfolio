@@ -7,11 +7,14 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
+import { useMatchMedia } from "../component/useMatchMedia";
+
 import projectQiitaFD5 from '../data/project1/projectQiitaFD1.jpeg';
 import prohjectNagoya1 from '../data/project2/projectNagoya1.jpeg';
 import projectSymposium1 from '../data/project3/projectSymposium1.jpeg';
 
 const ProjectGallary = () => {
+  const isSmallScreen = useMatchMedia("(max-width: 800px)");
 
   return (
     <Box>
@@ -27,9 +30,9 @@ const ProjectGallary = () => {
         Dive into a world of technological exploration and problem-solving.
       </Typography>
 
-      <Box display="flex" sx={{ gap: 2 }}>
+      <Box display="flex" sx={{ gap: 2, flexDirection: isSmallScreen ? 'column' : 'row' }}>
         <Link to="/project/1" style={{ textDecoration: 'none' }}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345, width: isSmallScreen ? '100%' : 'auto'  }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -51,7 +54,7 @@ const ProjectGallary = () => {
         </Link>
 
         <Link to="/project/2"style={{ textDecoration: 'none' }}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345, width: isSmallScreen ? '100%' : 'auto'  }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -73,7 +76,7 @@ const ProjectGallary = () => {
         </Link>
 
         <Link to="/project/3"style={{ textDecoration: 'none' }}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345, width: isSmallScreen ? '100%' : 'auto'  }}>
             <CardActionArea>
               <CardMedia
                 component="img"
