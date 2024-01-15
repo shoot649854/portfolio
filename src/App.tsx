@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import AppLayout from "./Layout/AppLayout";
-import Blog from "./page/Blog";
+import Blog from "./page/Homepage";
 import ProjectGallary from "./page/ProjectGallary";
 import ProjectQiitaFD1 from "./page/ProjectQiitaFD1";
 import ProjectNagoya from "./page/ProjectNagoya";

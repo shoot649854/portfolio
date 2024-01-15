@@ -20,3 +20,21 @@ export interface IVideoSegment {
   source: string;
   type: string;
 }
+
+export interface MainFeaturedPostProps {
+  title: string;
+  description: string;
+  image: string;
+  imageText?: string;
+  linkText?: string;
+  LinkToPage: string;
+}
+
+export interface FeaturedPostProps {
+  title: string;
+  description: string;
+  date: string;
+  image: string;
+  imageText?: string;
+  LinkToPage: string;
+}
