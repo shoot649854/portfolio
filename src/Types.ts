@@ -15,3 +15,8 @@ export interface IProjectHeader {
   imageSrcPath?: string;
   children?: ReactNode;
 }
+
+export interface IVideoSegment {
+  source: string;
+  type: string;
+}

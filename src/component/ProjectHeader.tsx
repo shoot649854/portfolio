@@ -3,6 +3,20 @@ import { Box, Avatar, Typography, Alert } from "@mui/material";
 import profile from '../data/profile/profile.jpeg';
 import { IProjectHeader } from "../Types";
 
+const Tags = ({ tags }: { tags: string[] }) => (
+  <Box sx={{ display: 'flex', gap: 1 }}>
+    {tags.map((tag: any, index: number) => (
+      <Box key={index} sx={{ display: 'flex', alignItems: 'center', gap: 0.25 }}>
+        <Box component="text"> {/* sx={{ border: '1px solid gray', padding: '2px 5px', borderRadius: '5px' }} */}
+          <Typography variant="subtitle2" color="primary">
+            {tag}
+          </Typography>
+        </Box>
+        {index < tags.length - 1 && <Typography variant="subtitle2" color="black">,</Typography>}
+      </Box>
+    ))}
+  </Box>
+);
 
 const ProjectHeader = ({ projectTitle, editedDate, imageSrcPath, tags, children }: IProjectHeader) => {
   const [imageLoadError, setImageLoadError] = useState(false);
@@ -41,15 +55,7 @@ const ProjectHeader = ({ projectTitle, editedDate, imageSrcPath, tags, children 
       <Typography variant="subtitle1">
         Edited Date: {editedDate}
       </Typography>
-      {tags && (
-        <Box sx={{ display: 'flex', gap: 1 }}>
-          {tags.map((tag: any, index: number) => (
-            <Typography key={index} variant="subtitle2" color="primary">
-              {tag}
-            </Typography>
-          ))}
-        </Box>
-      )}
+      {tags && <Tags tags={tags} />}
       {children}
     </>
   );
