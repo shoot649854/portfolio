@@ -25,6 +25,7 @@ const ProjectTemplate = () => {
   `;
 
   return (
+    //Ideathon / Brainstorming, Solution, Struggle, Demo, Conclusion
     <Box>
       <ProjectHeader projectTitle={projectTitle} editedDate={editedDate} tags={['Tag1', 'Tag2']}/>
 
