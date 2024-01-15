@@ -19,8 +19,12 @@ function App() {
           <Route path="portfolio/blog" element={<Blog />} />
           <Route path="portfolio/project" element={<ProjectGallary />} />
           <Route path="portfolio/project/1" element={<ProjectQiitaFD1 />} />
+          <Route path="project/1" element={<ProjectQiitaFD1 />} />
           <Route path="portfolio/project/2" element={<ProjectNagoya />} />
+          <Route path="project/2" element={<ProjectNagoya />} />
           <Route path="portfolio/project/3" element={<ProjectSymposium />} />
+          <Route path="project/3" element={<ProjectSymposium />} />
+          
           {/* Not Found Page Router */}
           <Route path="portfolio/*" element={<NotFound />} />
         </Route>
