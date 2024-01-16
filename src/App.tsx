@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import AppLayout from "./Layout/AppLayout";
 import Blog from "./page/Homepage";
@@ -24,7 +24,8 @@ function App() {
           <Route path="project/2" element={<ProjectNagoya />} />
           <Route path="portfolio/project/3" element={<ProjectSymposium />} />
           <Route path="project/3" element={<ProjectSymposium />} />
-          
+
+          <Route path="portfolio" element={<Navigate to = '/portfolio/blog' />} />
           {/* Not Found Page Router */}
           <Route path="portfolio/*" element={<NotFound />} />
         </Route>
