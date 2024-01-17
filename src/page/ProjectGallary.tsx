@@ -19,7 +19,7 @@ const ProjectGallary = () => {
   return (
     <Box>
       <Typography variant="h1" fontSize="42px" fontWeight="bold" color="black" marginBottom="20px" fontFamily="sans-serif">
-          Project Gallary
+          Project Gallery
       </Typography>
       <Typography variant="subtitle1" fontSize="13px" margin='20px' color="black" fontFamily="sans-serif">
         Explore my Project Gallery showcasing innovative endeavors. 
