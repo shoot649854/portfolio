@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { Outlet } from "react-router-dom";
-import Header from "../component/Header";
-import Footer from "../component/Footer";
+import Header from "../component/ProjectComponent/Header";
+import Footer from "../component/ProjectComponent/Footer";
 import { useMatchMedia } from "../component/useMatchMedia";
 
 const AppLayout = () => {
@@ -20,7 +20,7 @@ const AppLayout = () => {
           backgroundColor: "#f5f6f6",
           minHeight: "100vh",
           "@media (max-width: 800px)": {
-            minWidth: isSmallScreen ? "430px" : "auto",
+            minWidth: isSmallScreen ? "410px" : "auto",
           },
           "@media (max-width: 576px)": {
             maxWidth: isExtraSmallScreen ? "200px" : "auto",

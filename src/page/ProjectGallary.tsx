@@ -19,7 +19,7 @@ const ProjectGallary = () => {
   return (
     <Box>
       <Typography variant="h1" fontSize="42px" fontWeight="bold" color="black" marginBottom="20px" fontFamily="sans-serif">
-          Project Gallary
+          Project Gallery
       </Typography>
       <Typography variant="subtitle1" fontSize="13px" margin='20px' color="black" fontFamily="sans-serif">
         Explore my Project Gallery showcasing innovative endeavors. 
@@ -31,7 +31,7 @@ const ProjectGallary = () => {
       </Typography>
 
       <Box display="flex" sx={{ gap: 2, flexDirection: isSmallScreen ? 'column' : 'row' }}>
-        <Link to="/project/1" style={{ textDecoration: 'none' }}>
+        <Link to="/portfolio/project/1" style={{ textDecoration: 'none' }}>
           <Card sx={{ maxWidth: 345, width: isSmallScreen ? '100%' : 'auto'  }}>
             <CardActionArea>
               <CardMedia
@@ -53,7 +53,7 @@ const ProjectGallary = () => {
           </Card>
         </Link>
 
-        <Link to="/project/2"style={{ textDecoration: 'none' }}>
+        <Link to="/portfolio/project/2"style={{ textDecoration: 'none' }}>
           <Card sx={{ maxWidth: 345, width: isSmallScreen ? '100%' : 'auto'  }}>
             <CardActionArea>
               <CardMedia
@@ -75,7 +75,7 @@ const ProjectGallary = () => {
           </Card>
         </Link>
 
-        <Link to="/project/3"style={{ textDecoration: 'none' }}>
+        <Link to="/portfolio/project/3"style={{ textDecoration: 'none' }}>
           <Card sx={{ maxWidth: 345, width: isSmallScreen ? '100%' : 'auto'  }}>
             <CardActionArea>
               <CardMedia

@@ -1,7 +1,7 @@
 import { CodeBlock as SyntaxHighlighter, dracula } from 'react-code-blocks';
 import { Box } from '@mui/material';
 
-import { ICodeSegment } from '../Types';
+import { ICodeSegment } from '../../Types';
 
 const CodeSegment = (props: ICodeSegment) => {
   const { language, showLineNumbers, startingLineNumber, children, ...rest } = props;

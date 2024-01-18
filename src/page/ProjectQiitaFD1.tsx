@@ -1,6 +1,6 @@
 import { Typography, Box } from "@mui/material";
-import CodeSegment from "../component/CodeSegment";
-import ProjectHeader from "../component/ProjectHeader";
+import CodeSegment from "../component/ProjectComponent/CodeSegment";
+import ProjectHeader from "../component/ProjectComponent/ProjectHeader";
 import projectQiitaFD1 from "../data/project1/projectQiitaFD1.jpeg";
 
 const ProjectQiitaFD1 = () => {

@@ -1,6 +1,6 @@
 import { Typography, Box } from '@mui/material';
-import CodeSegment from '../component/CodeSegment';
-import ProjectHeader from '../component/ProjectHeader';
+import CodeSegment from '../component/ProjectComponent/CodeSegment';
+import ProjectHeader from '../component/ProjectComponent/ProjectHeader';
 import NotFound from '../data/NotFound/NotFound1.png';
 
 const ProjectTemplate = () => {

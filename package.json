@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://shoot649854.github.io/portfolio",
+  "homepage": "https://shoot649854.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
