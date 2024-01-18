@@ -39,3 +39,18 @@ export interface FeaturedPostProps {
   imageText?: string;
   LinkToPage: string;
 }
+
+export interface ArticleSection {
+  type: string;
+  variant?: string; 
+  content?: string;
+  url?: string;
+  description?: string;
+}
+
+export interface Article {
+  projectTitle: string;
+  editedDate: string;
+  tags: string[];
+  article: ArticleSection[];
+}

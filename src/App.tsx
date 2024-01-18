@@ -7,6 +7,7 @@ import ProjectGallary from "./page/ProjectGallary";
 import ProjectQiitaFD1 from "./page/ProjectQiitaFD1";
 import ProjectNagoya from "./page/ProjectNagoya";
 import ProjectSymposium from "./page/ProjectSymposium";
+import TestJSONProject from "./page/TestJSONProject";
 import NotFound from "./page/NotFound";
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
           <Route path="project/2" element={<ProjectNagoya />} />
           <Route path="portfolio/project/3" element={<ProjectSymposium />} />
           <Route path="project/3" element={<ProjectSymposium />} />
+
+          <Route path="portfolio/project/0" element={<TestJSONProject />} />
 
           <Route path="portfolio" element={<Navigate to = '/portfolio/blog' />} />
           {/* Not Found Page Router */}
