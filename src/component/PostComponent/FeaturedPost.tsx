@@ -1,19 +1,14 @@
-// import * as React from 'react';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import CardActionArea from '@mui/material/CardActionArea';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import { FeaturedPostProps } from '../../Types';
+import { Link } from "react-router-dom";
+import { Typography, Grid, Card, CardContent, CardMedia } from "@mui/material";
+import { FeaturedPostProps } from "../../Types";
 
 const FeaturedPost = (props: FeaturedPostProps) => {
   const { title, description, date, image, imageText, LinkToPage } = props;
 
   return (
     <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href={LinkToPage}>
-        <Card sx={{ display: 'flex' }}>
+      <Link to={LinkToPage} style={{ textDecoration: "none" }}>
+        <Card sx={{ display: "flex" }}>
           <CardContent sx={{ flex: 1 }}>
             <Typography component="h2" variant="h5">
               {title}
@@ -30,14 +25,14 @@ const FeaturedPost = (props: FeaturedPostProps) => {
           </CardContent>
           <CardMedia
             component="img"
-            sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
+            sx={{ width: 160, display: { xs: "none", sm: "block" } }}
             image={image}
             alt={imageText}
           />
         </Card>
-      </CardActionArea>
+      </Link>
     </Grid>
   );
-}
+};
 
 export default FeaturedPost;
