@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/portfolio/static/js/main.b5d01710.js",
+    "main.js": "/portfolio/static/js/main.c5310ee7.js",
     "react-syntax-highlighter/refractor-core-import.js": "/portfolio/static/js/react-syntax-highlighter/refractor-core-import.428e8cda.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/portfolio/static/js/react-syntax-highlighter_languages_refractor_abap.b57a4f74.chunk.js",
     "react-syntax-highlighter_languages_refractor_abnf.js": "/portfolio/static/js/react-syntax-highlighter_languages_refractor_abnf.0840b18e.chunk.js",
@@ -283,16 +283,19 @@
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/projectNagoyaDemo.mp4": "/portfolio/static/media/projectNagoyaDemo.47caf218c668f48ee7a8.mp4",
     "static/media/projectNagoya2.png": "/portfolio/static/media/projectNagoya2.845ecd733de209a905d7.png",
+    "static/media/demo_cruzhack.gif": "/portfolio/static/media/demo_cruzhack.e9547ac70f7b99ebcf3e.gif",
+    "static/media/running.jpg": "/portfolio/static/media/running.670815c264e4c09cc920.jpg",
     "static/media/projectQiitaFD2.jpeg": "/portfolio/static/media/projectQiitaFD2.aa2d17db40882575538c.jpeg",
     "static/media/projectSymposium1.jpeg": "/portfolio/static/media/projectSymposium1.12207c8ad9daebf3f911.jpeg",
     "static/media/projectQiitaFD1.jpeg": "/portfolio/static/media/projectQiitaFD1.89e1fb7b73f7c765ad35.jpeg",
     "static/media/profile.jpeg": "/portfolio/static/media/profile.60c0d41aaf7f486d5264.jpeg",
+    "static/media/mapbox.jpeg": "/portfolio/static/media/mapbox.1587a6a989f5bbef9179.jpeg",
     "static/media/projectNagoya1.jpeg": "/portfolio/static/media/projectNagoya1.2151402979cfd07166c1.jpeg",
     "static/media/NotFound1.png": "/portfolio/static/media/NotFound1.86be8081053c082c9c21.png",
     "static/media/blog-post.1.md": "/portfolio/static/media/blog-post.1.50d9283f83f7cfcc4000.md",
     "index.html": "/portfolio/index.html",
     "main.f855e6bc.css.map": "/portfolio/static/css/main.f855e6bc.css.map",
-    "main.b5d01710.js.map": "/portfolio/static/js/main.b5d01710.js.map",
+    "main.c5310ee7.js.map": "/portfolio/static/js/main.c5310ee7.js.map",
     "refractor-core-import.428e8cda.chunk.js.map": "/portfolio/static/js/react-syntax-highlighter/refractor-core-import.428e8cda.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.b57a4f74.chunk.js.map": "/portfolio/static/js/react-syntax-highlighter_languages_refractor_abap.b57a4f74.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abnf.0840b18e.chunk.js.map": "/portfolio/static/js/react-syntax-highlighter_languages_refractor_abnf.0840b18e.chunk.js.map",
@@ -575,6 +578,6 @@
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.b5d01710.js"
+    "static/js/main.c5310ee7.js"
   ]
 }
