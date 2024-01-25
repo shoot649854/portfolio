@@ -1,22 +1,27 @@
 import { useState, useEffect } from "react";
-import { Box, Avatar, Typography, Alert } from "@mui/material";
+import { Box, Avatar, Typography, Alert, useMediaQuery } from "@mui/material";
 import profile from '../../data/profile/profile.jpeg';
 import { IProjectHeader } from "../../Types";
 
-const Tags = ({ tags }: { tags: string[] }) => (
-  <Box sx={{ display: 'flex', gap: 1 }}>
-    {tags.map((tag: any, index: number) => (
-      <Box key={index} sx={{ display: 'flex', alignItems: 'center', gap: 0.25 }}>
-        <Box component="text"> {/* sx={{ border: '1px solid gray', padding: '2px 5px', borderRadius: '5px' }} */}
-          <Typography variant="subtitle2" color="primary">
-            {tag}
-          </Typography>
+const Tags = ({ tags }: { tags: string[] }) => {
+  const isSmallScreen = useMediaQuery('(max-width:600px)');
+
+  return (
+    <Box sx={{ display: 'flex', flexDirection: isSmallScreen ? 'column' : 'row', gap: 1 }}>
+      {tags.map((tag: any, index: number) => (
+        <Box key={index} sx={{ display: 'flex', alignItems: 'center', gap: isSmallScreen ? 0 : 0.25 }}>
+          <Box component="text" sx={{ padding: isSmallScreen ? '2px 0' : '2px 5px', borderRadius: '5px', margin: isSmallScreen ? '2px 0' : '0' }}>
+            <Typography variant="subtitle2" color="primary">
+              {tag}
+            </Typography>
+          </Box>
+          {index < tags.length - 1 && <Typography variant="subtitle2" color="black" display={isSmallScreen ? 'none' : 'block'}>,</Typography>}
         </Box>
-        {index < tags.length - 1 && <Typography variant="subtitle2" color="black">,</Typography>}
-      </Box>
-    ))}
-  </Box>
-);
+      ))}
+    </Box>
+  );
+};
+
 
 const ProjectHeader = ({ projectTitle, editedDate, imageSrcPath, tags, children }: IProjectHeader) => {
   const [imageLoadError, setImageLoadError] = useState(false);
