@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea } from "@mui/material";
-import Typography from "@mui/material/Typography";
+import {
+  Box,
+  Card,
+  CardContent,
+  CardMedia,
+  CardActionArea,
+  Typography,
+} from "@mui/material";
 
 import { useMatchMedia } from "../component/useMatchMedia";
 

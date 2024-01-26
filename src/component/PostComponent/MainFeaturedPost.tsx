@@ -1,3 +1,4 @@
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { Link } from "react-router-dom";
 import {
   Paper,
@@ -9,60 +10,63 @@ import { MainFeaturedPostProps } from '../../Types';
 
 const MainFeaturedPost = (props: MainFeaturedPostProps) => {
   const { title, description, image, imageText, LinkToPage, date } = props;
+  const isSmallScreen = useMediaQuery('(max-width: 800px)');
 
   return (
-    <Link to={LinkToPage} style={{ textDecoration: 'none' }}>
-      <Paper
-        sx={{
-          position: "relative",
-          backgroundColor: "grey.800",
-          color: "#fff",
-          mb: 4,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundImage: `url(${image})`,
-        }}
-      >
-        {<img style={{ display: "none" }} src={image} alt={imageText} />}
-        <Box
+    <Box height={isSmallScreen ? 'auto' : '400px'}>
+      <Link to={LinkToPage} style={{ textDecoration: 'none' }}>
+        <Paper
           sx={{
-            position: "absolute",
-            top: 0,
-            bottom: 0,
-            right: 0,
-            left: 0,
-            backgroundColor: "rgba(0,0,0,.3)",
+            position: "relative",
+            backgroundColor: "grey.800",
+            color: "#fff",
+            mb: 4,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundImage: `url(${image})`,
           }}
-        />
-        <Grid container>
-          <Grid item md={6}>
-            <Box
-              sx={{
-                position: "relative",
-                p: { xs: 3, md: 6 },
-                pr: { md: 0 },
-              }}
-            >
-              <Typography
-                component="h1"
-                variant="h3"
-                color="inherit"
-                gutterBottom
+        >
+          {<img style={{ display: "none" }} src={image} alt={imageText} />}
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              bottom: 0,
+              right: 0,
+              left: 0,
+              backgroundColor: "rgba(0,0,0,.3)",
+            }}
+          />
+          <Grid container>
+            <Grid item md={6}>
+              <Box
+                sx={{
+                  position: "relative",
+                  p: { xs: 3, md: 6 },
+                  pr: { md: 0 },
+                }}
               >
-                {title}
-              </Typography>
-              <Typography variant="subtitle1" color="inherit">
-                {date}
-              </Typography>
-              <Typography variant="h5" color="inherit" paragraph>
-                {description}
-              </Typography>
-            </Box>
+                <Typography
+                  component="h1"
+                  variant="h3"
+                  color="inherit"
+                  gutterBottom
+                >
+                  {title}
+                </Typography>
+                <Typography variant="subtitle1" color="inherit">
+                  {date}
+                </Typography>
+                <Typography variant="h5" color="inherit" paragraph>
+                  {description}
+                </Typography>
+              </Box>
+            </Grid>
           </Grid>
-        </Grid>
-      </Paper>
-    </Link>
+        </Paper>
+      </Link>
+    </Box>
   );
 };
 

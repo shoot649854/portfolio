@@ -3,7 +3,7 @@ import { HashRouter as BrowserRouter, Routes, Route, Navigate } from 'react-rout
 
 import AppLayout from "./Layout/AppLayout";
 import Blog from "./page/Homepage";
-import ProjectGallary from "./page/Achivement";
+import Achivement from "./page/Achivement";
 import ProjectQiitaFD1 from "./page/ProjectQiitaFD1";
 import ProjectNagoya from "./page/ProjectNagoya";
 import ProjectSymposium from "./page/ProjectSymposium";
@@ -21,7 +21,7 @@ function App() {
           <Route index element={<Blog />} />
           <Route path="portfolio/blog" element={<Blog />} />
           <Route path="portfolio/internship/1" element={<Internship1 />} />
-          <Route path="portfolio/project" element={<ProjectGallary />} />
+          <Route path="portfolio/project" element={<Achivement />} />
           <Route path="portfolio/project/1" element={<ProjectQiitaFD1 />} />
           <Route path="project/1" element={<ProjectQiitaFD1 />} />
           <Route path="portfolio/project/2" element={<ProjectNagoya />} />

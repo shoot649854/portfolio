@@ -1,22 +1,35 @@
-import * as React from 'react';
+import React, { useState } from "react";
 import { useNavigate } from 'react-router';
+import { useMediaQuery } from "../../component/useMediaQuery";
 
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
+import {
+  Toolbar,
+  IconButton,
+  Button,
+  Box,
+  Avatar,
+} from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
-import Button from '@mui/material/Button';
-import Box from '@mui/system/Box';
-import Avatar from '@mui/material/Avatar';
 
+import Hamburger from './Hamburger';
 import profile from '../../data/profile/profile.jpeg';
 
 function Header() {
   const navigate = useNavigate();
+  const isSmallScreen = useMediaQuery("(max-width: 900px)");
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+
+  const handleHamburgerClick = () => {
+    setIsHamburgerOpen(!isHamburgerOpen);
+  };
   
   return (
     <React.Fragment>
       <Box marginBottom='20px' sx={{ display: 'flex', justifyContent: 'center', backgroundColor: '#fff'}}>
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          {isSmallScreen && (
+            <Hamburger onClick={handleHamburgerClick} isInitiallyOpen={false} />
+          )}
           <IconButton>
             <SearchIcon />
           </IconButton>
