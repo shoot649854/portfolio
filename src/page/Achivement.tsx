@@ -14,6 +14,7 @@ import prohjectNagoya1 from "../data/project2/projectNagoya1.jpeg";
 import projectSymposium1 from "../data/project3/projectSymposium1.jpeg";
 import running from "../data/internship1/running.jpg";
 import cruzhackdemo from '../data/project4/demo_cruzhack.gif'
+
 const Achivement = () => {
   const isSmallScreen = useMatchMedia("(max-width: 800px)");
 
