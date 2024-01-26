@@ -45,17 +45,17 @@ const sidebar = {
 const defaultTheme = createTheme();
 
 function Homepage() {
-  const MainFeaturedPostTitle = 'Electric Sheep Hackathon';
-  const MainFeaturedPostDescription = 'Collaborated with Japense university students to create AR App with Flutter that Toyota sponsors. Utilize Luma API and Google Map API for 3D models and map feature. Our proposal would be reviewed outside the project and presented at Toyota HQ in Japan.';
-  const MainFeaturedPostLinkToPage = '/portfolio/project/2';
+  const MainFeaturedPostTitle = "Electric Sheep Hackathon";
+  const MainFeaturedPostDescription = "Collaborated with Japense university students to create AR App with Flutter that Toyota sponsors. Utilize Luma API and Google Map API for 3D models and map feature. Our proposal would be reviewed outside the project and presented at Toyota HQ in Japan.";
+  const MainFeaturedPostLinkToPage = "/portfolio/project/2";
 
-  const FeaturedPost1Title = 'Health Tech Hackathon';
-  const FeaturedPost1Description = 'Developed a platform to assist paperwork in medical industry with GPT API to create medical SOAP forms, initial medical record documents for all patients. Used python Flask (Frontend), gpt api, and github page';
-  const FeaturedPost1PostLinkToPage = '/portfolio/project/1';
+  const FeaturedPost1Title = "Health Tech Hackathon";
+  const FeaturedPost1Description = "Developed a platform to assist paperwork in medical industry with GPT API to create medical SOAP forms, initial medical record documents for all patients. Used python Flask (Frontend), gpt api, and github page";
+  const FeaturedPost1PostLinkToPage = "/portfolio/project/1";
 
-  const FeaturedPost2Title = 'European Symposium Cyberwarfare';
-  const FeaturedPost2Description = 'Researched on cyber-warfare I presented at research project. Worked with technology expert Kenneth Geers and my mentor, professor Alani Mayada.';
-  const FeaturedPost2PostLinkToPage = '/portfolio/project/3';
+  const FeaturedPost2Title = "European Symposium Cyberwarfare";
+  const FeaturedPost2Description = "Researched on cyber-warfare I presented at research project. Worked with technology expert Kenneth Geers and my mentor, professor Alani Mayada.";
+  const FeaturedPost2PostLinkToPage = "/portfolio/project/3";
 
   return (
     <ThemeProvider theme={defaultTheme}>
