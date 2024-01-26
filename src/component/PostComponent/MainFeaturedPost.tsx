@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
-import { Paper, Typography, Grid, Box } from "@mui/material";
-import { MainFeaturedPostProps } from "../../Types";
+import {
+  Paper,
+  Typography,
+  Grid,
+  Box,
+} from '@mui/material';
+import { MainFeaturedPostProps } from '../../Types';
 
 const MainFeaturedPost = (props: MainFeaturedPostProps) => {
   const { title, description, image, imageText, LinkToPage, date } = props;
 
   return (
-    <Link to={LinkToPage} style={{ textDecoration: "none" }}>
+    <Link to={LinkToPage} style={{ textDecoration: 'none' }}>
       <Paper
         sx={{
           position: "relative",
